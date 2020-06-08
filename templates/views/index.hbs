@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+
+    {{>header}}
+    <p id="message">you can use this site to check weather</p>
+    <form>
+        <input type="text" placeholder="Please Enter The Place To Know Weather">
+        <button>SEARCH</button>
+
+    </form>
+
+
+    <div class="weather hide">
+        <div class="temp">
+            <h2>temperature</h2>
+            <h3 id="temp"></h3>
+        </div>
+        <div class="speed">
+            <h2>Wind Speed</h2>
+            <h3 id="speed"></h3>
+        </div>
+        <div class="cloud">
+            <h2>Cloud Condition</h2>
+            <h3 id="cloud"></h3>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
