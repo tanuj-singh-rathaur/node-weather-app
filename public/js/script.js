@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     weather.classList.remove('hide')
     console.log(search.value)
-    fetch(`http://localhost:3000/weather?search=${search.value}`).then((response) => {
+    fetch(`/weather?search=${search.value}`).then((response) => {
         response.json().then((data) => {
             console.log(data)
             temp.textContent = "loading"
